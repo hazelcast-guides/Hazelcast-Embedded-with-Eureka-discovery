@@ -30,7 +30,7 @@ In this tutorial, you will learn how to use Spring Boot application with embedde
 Before starting this tutorial, make sure that you meet the following prerequisites:
 
 * https://git-scm.com/[Git]
-* JDK 1.8+
+* JDK 1.8
 * Apache Maven 3.2+
 
 ==  Introduction
@@ -59,7 +59,7 @@ $ mvn clean package
 ---
 == Step 1. Start Eureka server
 
-To use Eureka discovery, you need first to start the Eureka server. Usually you would start multiple instances to provide high availability, but in this Code Sample a single localhost instance is good enough.
+For utilizing Eureka discovery, initiating the Eureka server is a prerequisite. Typically, you would launch several instances to ensure high availability, but for the purposes of this Code Sample, a solitary instance running on localhost is sufficiently adequate.
 
 
 [source,shell]

@@ -2,14 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <artifactId>eureka</artifactId>
-        <groupId>com.hazelcast.samples.eureka</groupId>
-        <version>0.1-SNAPSHOT</version>
-    </parent>
-
-    <groupId>com.hazelcast.samples.eureka.embedded</groupId>
+    <groupId>com.hazelcast.samples.eureka</groupId>
     <artifactId>springboot-embedded</artifactId>
+    <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Eureka Spring Boot Embedded</name>
@@ -21,4 +16,27 @@
         <module>hazelcast-separate-client</module>
         <module>hazelcast-metadata</module>
     </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <!-- Dependencies and versions used in modules can be defined here -->
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
