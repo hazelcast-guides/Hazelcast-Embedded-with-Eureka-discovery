@@ -24,7 +24,7 @@ In this tutorial, you will learn how to use Spring Boot application with embedde
 Before starting this tutorial, make sure that you meet the following prerequisites:
 
 * https://git-scm.com/[Git]
-* JDK 1.8
+* JDK 11
 * Apache Maven 3.2+
 
 ==  Introduction
