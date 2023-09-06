@@ -1,5 +1,6 @@
 package com.hazelcast.samples.eureka;
 
+import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CommandController {
 
-    @Autowired
+    @Autowired(required=true)
     HazelcastInstance hazelcastInstance;
 
     @RequestMapping("/put")

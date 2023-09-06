@@ -65,6 +65,9 @@ You can see that Eureka Sever started correctly by opening the browser at: http:
 image:eureka.png[]
 
 ==  Hazelcast Only
+NOTE::
+Before starting examples, make sure that the Eureka Server is running.
+
 The project named `hazelcast-only` demonstrates how to effectively use Hazelcast discovery with Eureka without needing to register your Spring Boot application at the same time.
 
 The simplest Hazelcast configuration looks as follows.
