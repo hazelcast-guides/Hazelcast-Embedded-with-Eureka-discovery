@@ -1,6 +1,5 @@
 package com.hazelcast.samples.eureka;
 
-import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;
 import org.springframework.beans.factory.annotation.Autowired;
