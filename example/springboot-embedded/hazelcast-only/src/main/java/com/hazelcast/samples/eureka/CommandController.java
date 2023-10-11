@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CommandController {
 
-    @Autowired(required=true)
+    @Autowired(required = true)
     HazelcastInstance hazelcastInstance;
 
     @RequestMapping("/put")

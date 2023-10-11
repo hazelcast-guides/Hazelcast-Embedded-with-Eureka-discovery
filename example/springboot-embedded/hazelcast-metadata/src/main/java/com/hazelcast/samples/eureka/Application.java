@@ -10,7 +10,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 
 @EnableDiscoveryClient
-@SpringBootApplication(exclude = {org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class})public class Application {
+@SpringBootApplication(exclude = { org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class })
+public class Application {
 
     @Value("${hazelcast.port:5701}")
     private int hazelcastPort;
@@ -22,10 +23,10 @@ import org.springframework.context.annotation.Bean;
         config.getNetworkConfig().setPort(hazelcastPort);
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         config.getNetworkConfig().getJoin().getEurekaConfig()
-              .setEnabled(true)
-              .setProperty("self-registration", "true")
-              .setProperty("namespace", "hazelcast")
-              .setProperty("use-metadata-for-host-and-port", "true");
+                .setEnabled(true)
+                .setProperty("self-registration", "true")
+                .setProperty("namespace", "hazelcast")
+                .setProperty("use-metadata-for-host-and-port", "true");
         return config;
     }
 

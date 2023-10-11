@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication(exclude = {org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class}, scanBasePackages = "com.hazelcast.samples.eureka")
+@SpringBootApplication(exclude = { org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class })
 public class Application {
 
     @Value("${hazelcast.port:5701}")
@@ -18,9 +18,9 @@ public class Application {
         config.getNetworkConfig().setPort(hazelcastPort);
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         config.getNetworkConfig().getJoin().getEurekaConfig()
-              .setEnabled(true)
-              .setProperty("self-registration", "true")
-              .setProperty("namespace", "hazelcast");
+                .setEnabled(true)
+                .setProperty("self-registration", "true")
+                .setProperty("namespace", "hazelcast");
         return config;
     }
 
