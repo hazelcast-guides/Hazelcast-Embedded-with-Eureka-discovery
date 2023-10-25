@@ -58,7 +58,7 @@ $ java -jar eureka-server/target/eureka-server-0.1-SNAPSHOT.jar
 
 You can see that Eureka Sever started correctly by opening the browser at: http://localhost:8761.
 
-image::ROOT:assets/images/eureka.png[]
+image:eureka.png[]
 
 == Step 2.1. Hazelcast Only
 
@@ -110,7 +110,7 @@ Members {size:2, ver:2} [
 
 In the Eureka web console, you should see the following "HAZELCAST-ONLY" entries.
 
-image::ROOT:assets/images/eureka-hazelcast-only.png[]
+image:eureka-hazelcast-only.png[]
 
 That is the simplest Eureka-based Hazelcast discovery. Sometimes, however, you need to have both your application and Hazelcast registered in Eureka.
 
@@ -135,7 +135,7 @@ $ java -jar hazelcast-separate-client/target/hazelcast-separate-client-0.1-SNAPS
 
 Hazelcast members should form a cluster together as in the previous section. You should also see two separate entries in the Eureka web console.
 
-image::ROOT:asserts/images/eureka-hazelcast-separate-client.png[]
+image:eureka-hazelcast-separate-client.png[]
 
 == Step 2.3. Hazelcast reusing Eureka Client (Metadata)
 
@@ -169,7 +169,7 @@ $ java -jar hazelcast-metadata/target/hazelcast-metadata-0.1-SNAPSHOT.jar --serv
 
 Hazelcast members should form a cluster together as in the previous section. You should also see two separate entries in the Eureka web console.
 
-image::ROOT:assets/images/eureka-hazelcast-metadata.png[]
+image:eureka-hazelcast-metadata.png[]
 
 == Step 3. Verifying the configuration
 
