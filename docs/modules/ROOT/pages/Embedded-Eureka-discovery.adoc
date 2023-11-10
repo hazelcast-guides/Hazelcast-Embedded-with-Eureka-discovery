@@ -1,6 +1,6 @@
 = Hazelcast Embedded with Eureka Discovery
 :page-layout: tutorial
-:page-product: operator
+:page-product: imdg
 :page-categories: Cloud Native,Spring Boot
 :page-lang: java
 :page-enterprise: false
