@@ -7,6 +7,7 @@
 :page-est-time: 20 mins
 :framework: Spring Boot
 :github-directory: https://github.com/hazelcast-guides/Hazelcast-Embedded-with-Eureka-discovery
+:url-spring-hazelcast: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#io.hazelcast
 :description: Learn how to use Hazelcast Eureka Discovery Plugin to discover Hazelcast members in a Eureka cluster.
 
 {description}
