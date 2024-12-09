@@ -17,7 +17,7 @@
     <description>Spring Boot Application using Embedded Hazelcast</description>
 
     <properties>
-        <hazelcast.version>5.3.0</hazelcast.version>
+        <hazelcast.version>5.3.5</hazelcast.version>
         <hazelcast-eureka-two.version>3.0.0</hazelcast-eureka-two.version>
     </properties>
 
